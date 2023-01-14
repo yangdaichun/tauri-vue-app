@@ -8,6 +8,10 @@ Vue地址：[https://cn.vuejs.org](https://cn.vuejs.org/)
 
 Element Plus地址：[https://element-plus.gitee.io](https://element-plus.gitee.io/)
 
+码云地址：[https://gitee.com/agafonov/tauri-vue-app](https://gitee.com/agafonov/tauri-vue-app/)
+
+GitHub地址：[https://github.com/yangdaichun/tauri-vue-app](https://github.com/yangdaichun/tauri-vue-app/)
+
 程序效果
 
 ![image](src/assets/app.png)
