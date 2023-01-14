@@ -8,8 +8,8 @@
   import zhCN from 'element-plus/dist/locale/zh-cn'
   const locale = ref(zhCN)
   onMounted(() => {
-    //禁用也没右键菜单
-   // document.addEventListener('contextmenu', e => e.preventDefault())
+    //禁用页面右键菜单
+    document.addEventListener('contextmenu', e => e.preventDefault())
   })
 </script>
 <style lang="scss">
@@ -25,7 +25,6 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-height: 550px;
     color: #2c3e50;
     overflow: hidden;
   }

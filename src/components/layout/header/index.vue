@@ -1,7 +1,7 @@
 <template>
-    <el-header >
+    <el-header>
       <el-row>
-        <el-col :span="14"  data-tauri-drag-region>
+        <el-col :span="14" data-tauri-drag-region>
           <label class="title" data-tauri-drag-region>
             &nbsp;&nbsp;&nbsp;&nbsp;Tauri Vue App
           </label>

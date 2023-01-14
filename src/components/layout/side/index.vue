@@ -1,5 +1,5 @@
 <template>
-  <el-aside width="65px"> 
+  <el-aside width="65px" data-tauri-drag-region> 
     <el-avatar @click="avatarHandle">Tauri</el-avatar>
     <el-menu :collapse="true" router :default-active="menuData.defaultRouter">
       <el-menu-item :index="item.routerPath"  v-for="item in menuData.menuItem" :key="item.routerPath">

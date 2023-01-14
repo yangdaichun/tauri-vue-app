@@ -66,8 +66,13 @@
     "updater": {
       "active": false
     },
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    },
     "windows": [
       {
+        "label": "main",
         "fullscreen": false,
         "height": 800,
         "width":1000,
