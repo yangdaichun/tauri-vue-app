@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3172745 */
+  src: url('iconfont.woff2?t=1652951873556') format('woff2'),
+       url('iconfont.woff?t=1652951873556') format('woff'),
+       url('iconfont.ttf?t=1652951873556') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-device:before {
+  content: "\e603";
+}
+
+.icon-questionfill:before {
+  content: "\e694";
+}
+
+.icon-delete:before {
+  content: "\e6b4";
+}
+
+.icon-window-minimize2:before {
+  content: "\e609";
+}
+
+.icon-window-minimize:before {
+  content: "\e93e";
+}
+
+.icon-window-close:before {
+  content: "\e617";
+}
+
+.icon-window-maximize:before {
+  content: "\e669";
+}
+
+.icon-window-restore:before {
+  content: "\e66a";
+}
+
+.icon-menu:before {
+  content: "\e624";
+}
+
+.icon-server-solid1:before {
+  content: "\e611";
+}
+
+.icon-config-icon:before {
+  content: "\e68b";
+}
+
+.icon-web:before {
+  content: "\e605";
+}
+
+.icon-cloud:before {
+  content: "\eb66";
+}
+
+.icon-tool:before {
+  content: "\e70c";
+}
+
