@@ -7,4 +7,5 @@ Tauri地址：[https://tauri.app](https://tauri.app/)
 Vue地址：[https://cn.vuejs.org](https://cn.vuejs.org/)
 
 程序效果
-![image](https://gitee.com/agafonov/tauri-vue-app/blob/master/src/assets/app.png)
+
+![image](src/assets/app.png)
