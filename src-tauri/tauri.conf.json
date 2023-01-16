@@ -4,7 +4,7 @@
     "beforeBuildCommand": "npm run build",
     "devPath": "http://localhost:1420",
     "distDir": "../dist",
-    "withGlobalTauri": false
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "Tauri Vue App",
@@ -68,7 +68,8 @@
     },
     "systemTray": {
       "iconPath": "icons/icon.png",
-      "iconAsTemplate": true
+      "iconAsTemplate": true,
+      "title":"Tauri Vue App"
     },
     "windows": [
       {
