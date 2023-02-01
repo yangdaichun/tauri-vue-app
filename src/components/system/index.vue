@@ -30,7 +30,8 @@
   import { appWindow } from '@tauri-apps/api/window';
   import { message } from '@tauri-apps/api/dialog';
   import { getName,getVersion,getTauriVersion } from '@tauri-apps/api/app';
-  import { ref } from 'vue'
+  import { listen } from '@tauri-apps/api/event'
+  import { onMounted, ref } from 'vue'
 
   const props=defineProps({
     minVisible: {
@@ -48,21 +49,25 @@
   })
   const isMaximized = ref(false)
 
+  //监视窗体最大化和还原状态，修改对应图标
+  listen('tauri://resize', async() => {
+    isMaximized.value = await appWindow.isMaximized()
+  })
+
   const minHandle = async () => {
     await appWindow.minimize()
   }
   const maxHandle = async () => {
-    if (await appWindow.isMaximized()) {
-      await appWindow.unmaximize()
-      isMaximized.value = false
-    } else {
-      await appWindow.maximize()
-      isMaximized.value = true
-    }
+    await appWindow.toggleMaximize()
   }
   const closeHandle = async () => {
-    const isQuit = await confirm('确定要退出程序吗?');
-    if(isQuit){
+    //appWindow.close()
+    // 采用CloseRequested 处理关闭提示消息，在自定义中调用close关闭窗体并没有触发CloseRequested事件，未确定原因
+    // 暂时采用事件 方式实现
+    if(appWindow.label == 'main'){
+      appWindow.emit("app-exist",{})
+    }
+    else {
       appWindow.close()
     }
   }
@@ -74,6 +79,10 @@
       `内核：${await getTauriVersion()}         \r\n` 
     await message(aboutMessage)
   }
+
+  onMounted(async () => {
+    isMaximized.value = await appWindow.isMaximized()
+  })
 </script>
 <style lang="scss" scoped>
   .control-button {
