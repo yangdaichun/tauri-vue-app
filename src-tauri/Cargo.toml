@@ -1,6 +1,6 @@
 [package]
 name = "tauri-vue-app"
-version = "0.0.1"
+version = "0.0.5"
 description = "Tauri Vue App"
 authors = ["you"]
 license = ""
@@ -11,12 +11,12 @@ rust-version = "1.57"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-tauri-build = { version = "1.2", features = [] }
+tauri-build = { version = "1.3", features = [] }
 
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.2", features = ["devtools", "dialog-all", "shell-open", "system-tray", "window-all"] }
+tauri = { version = "1.3", features = ["devtools", "dialog-all", "shell-open", "system-tray", "window-all"] }
 tauri-plugin-single-instance = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "dev" }
 
 [features]
