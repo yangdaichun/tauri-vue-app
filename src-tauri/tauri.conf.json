@@ -56,7 +56,8 @@
           "language": "zh-CN"
         },       
         "nsis": {
-          "languages": ["SimpChinese"]
+          "languages": ["SimpChinese"],
+          "installerIcon":"icons/icon.ico"
         },
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
