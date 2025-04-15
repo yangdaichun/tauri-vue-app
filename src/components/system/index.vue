@@ -27,13 +27,14 @@
   </div>
 </template>
 <script setup>
-  import { appWindow } from '@tauri-apps/api/window';
-  import { message } from '@tauri-apps/api/dialog';
+  import { getCurrentWebviewWindow } from '@tauri-apps/api/webviewWindow';
+  import { message, confirm } from '@tauri-apps/plugin-dialog';
   import { getName,getVersion,getTauriVersion } from '@tauri-apps/api/app';
   import { listen } from '@tauri-apps/api/event'
   import { onMounted, ref } from 'vue'
+  const appWindow = getCurrentWebviewWindow()
 
-  const props=defineProps({
+  const props = defineProps({
     minVisible: {
       type: Boolean,
       default: () => true,
@@ -61,11 +62,14 @@
     await appWindow.toggleMaximize()
   }
   const closeHandle = async () => {
-    //appWindow.close()
-    // 采用CloseRequested 处理关闭提示消息，在自定义中调用close关闭窗体并没有触发CloseRequested事件，未确定原因
-    // 暂时采用事件 方式实现
     if(appWindow.label == 'main'){
-      appWindow.emit("app-exist",{})
+      const confirmation = await confirm(
+        '确定要退出程序吗？',
+        { title: '退出', kind: 'warning' }
+      );
+      if(confirmation)  {
+        appWindow.close()
+      }
     }
     else {
       appWindow.close()

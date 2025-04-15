@@ -1,7 +1,7 @@
 {
   "name": "tauri-vue-app",
   "private": true,
-  "version": "0.0.6",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,13 +12,15 @@
     "tauri dev": "tauri dev"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.4.0",
+    "@tauri-apps/api": "^2.4.1",
+    "@tauri-apps/plugin-dialog": "^2.2.1",
+    "@tauri-apps/plugin-shell": "^2.2.0",
     "element-plus": "^2.2.28",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.4.0",
+    "@tauri-apps/cli": "^2.4.1",
     "@vitejs/plugin-vue": "^4.0.0",
     "sass": "^1.57.1",
     "vite": "^4.2.1"
