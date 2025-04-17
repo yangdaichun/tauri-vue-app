@@ -19,7 +19,7 @@
         "center":true,
         "resizable": true,
         "title": "Tauri Vue App",
-        "decorations":false
+        "decorations": true
       }
     ],
     "security": {

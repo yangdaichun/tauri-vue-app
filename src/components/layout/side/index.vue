@@ -23,7 +23,7 @@
       icon: 'icon-cloud',
      },
      {
-      title: '查询',
+      title: '设置',
       routerPath: '/search',
       icon: 'icon-config-icon',
      }
