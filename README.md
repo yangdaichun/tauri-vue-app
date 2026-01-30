@@ -1,22 +1,7 @@
-# Tauri + Vue 3 + Element Plus 版本
+# Tauri + Vue 3
 
-该源码可帮助你快速开始一个Tauri + Vue 3的项目，采用Vue 3 `<script setup>`风格
+This template should help get you started developing with Tauri + Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-Tauri地址：[https://tauri.app](https://tauri.app/)
+## Recommended IDE Setup
 
-Vue地址：[https://cn.vuejs.org](https://cn.vuejs.org/)
-
-Element Plus地址：[https://element-plus.gitee.io](https://element-plus.gitee.io/)
-
-码云地址：[https://gitee.com/agafonov/tauri-vue-app](https://gitee.com/agafonov/tauri-vue-app/)
-
-GitHub地址：[https://github.com/yangdaichun/tauri-vue-app](https://github.com/yangdaichun/tauri-vue-app/)
-# Electron + Vue 3 + Element Plus 版本
-
-码云地址：[https://gitee.com/agafonov/electron-vue-app](https://gitee.com/agafonov/electron-vue-app/)
-
-GitHub 地址：[https://github.com/yangdaichun/electron-vue-app](https://github.com/yangdaichun/electron-vue-app/)
-
-程序效果
-
-![image](src/assets/app.png)
+- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
